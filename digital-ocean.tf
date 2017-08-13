@@ -2,7 +2,6 @@ variable "do_token" {}
 variable "do_ssh_keys" {
   type = "list"
 }
-variable "do_droplet_id" {}
 variable "do_domain_name" {}
 variable "do_region" {}
 
@@ -21,7 +20,7 @@ resource "digitalocean_droplet" "k8s-node1" {
 }
 
 resource "digitalocean_floating_ip" "default" {
-  droplet_id = "${var.do_droplet_id}"
+  droplet_id = "${digitalocean_droplet.k8s-node1.id}"
   region = "${var.do_region}"
 }
 
