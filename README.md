@@ -1,3 +1,3 @@
-# my-k8s
+# mygogs
 
-My kubernetes cluster.
+我的 Git 服务。
