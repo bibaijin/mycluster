@@ -1,3 +1,3 @@
-# mygogs
+# mycluster
 
-我的 Git 服务。
+我的集群。
