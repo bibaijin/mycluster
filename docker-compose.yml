@@ -23,7 +23,10 @@ services:
       - "10022:22"
     links:
       - gogs
+    volumes:
+      - nginx:/var/log/app
 
 volumes:
   gogs:
   postgres:
+  nginx:
